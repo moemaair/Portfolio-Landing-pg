@@ -41,9 +41,13 @@ h1{
     margin:1rem 2rem;
   }
   .second-container{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  #illustration{
+    width: 100px;
   }
   .text{
     text-align: center;
@@ -97,15 +101,13 @@ li{
 /* second container */
 
 .second-container{
+ 
  background-color: var(--big-box-bg);
- max-width: calc(100vw - 10vw);
+ width: calc(100vw - 10vw);
  height: 100vh;
  position: relative;
 }
 
-#my-image{
-  max-width: 100%;
-  width: 90px;
-  height: auto;
-  border-radius: 50%;
+#illustration{
+ display: none;
 }
