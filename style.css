@@ -1,0 +1,111 @@
+/* desktop approach */
+*{ 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --big-box-bg:#FFF2C5;
+  --small-box-bg:#F0D0AA;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+/* every H1 tag */
+h1{
+  font-weight: 700;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+/* nav section */
+.nav{
+  margin:3rem 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+/* logo */
+@media screen and (max-width:700px) {
+  .notColored,.colored{
+  font-size: 9px;
+  }
+  .nav-list{
+   display: none;
+  }
+  .nav{
+    margin:1rem 2rem;
+  }
+  .second-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text{
+    text-align: center;
+  }
+  .text h2{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+  .text p{
+    font-size: 10px;
+   
+  }
+  
+ 
+ 
+  
+}
+
+h3 .colored{
+  color: var(--small-box-bg);
+  display: block;
+  font-size: 12px;
+}
+h3 .notColored::after{
+ content: '/>';
+ color: var(--small-box-bg);
+}
+/* socials */
+.socials{
+  display: flex;
+  gap:33px;
+  font-size: 10px;
+  position: relative;
+  top: 10px;
+  
+}
+/* nav list */
+a{
+  text-decoration: none;
+  color: black;
+}
+ul{
+  display: flex;
+  gap: 30px;
+}
+li{
+  list-style: none;
+}
+
+/* second container */
+
+.second-container{
+ background-color: var(--big-box-bg);
+ max-width: calc(100vw - 10vw);
+ height: 100vh;
+ position: relative;
+}
+
+#my-image{
+  max-width: 100%;
+  width: 90px;
+  height: auto;
+  border-radius: 50%;
+}
