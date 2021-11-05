@@ -9,28 +9,33 @@
   --small-box-bg:#F0D0AA;
 }
 body{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Zen Old Mincho', serif;
   letter-spacing: 1px;
+  background-color: #f6f6f6;
 }
 /* every H1 tag */
-h1{
+h3{
   font-weight: 700;
+  /* font-family: 'Londrina Outline', cursive; */
 }
 .container{
   width: 100vw;
   height: 100vh;
-  background-color: #fff;
+  
   display: flex;
   flex-direction: column;
 }
 /* nav section */
 .nav{
-  margin:3rem 4rem;
+  padding:30px 4rem;
   display: flex;
   justify-content: space-between;
 }
 /* logo */
 @media screen and (max-width:700px) {
+  .container{
+    z-index: -1;
+  }
   .notColored,.colored{
   font-size: 9px;
   }
@@ -38,16 +43,28 @@ h1{
    display: none;
   }
   .nav{
-    margin:1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+ 
   }
   .second-container{
+    z-index: 1;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 100%;
+  
   }
+  .second-container section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    height: 100%;
+  }
+  
   #illustration{
-    width: 100px;
+    width: 200px;
+   
   }
   .text{
     text-align: center;
@@ -59,6 +76,11 @@ h1{
   }
   .text p{
     font-size: 10px;
+   
+  }
+  .bg-center{
+    display: none;
+  
    
   }
   
@@ -78,11 +100,14 @@ h3 .notColored::after{
 }
 /* socials */
 .socials{
+
   display: flex;
   gap:33px;
   font-size: 10px;
   position: relative;
   top: 10px;
+  z-index: 100;
+
   
 }
 /* nav list */
@@ -90,24 +115,155 @@ a{
   text-decoration: none;
   color: black;
 }
+.socials a:hover{
+  transform: scale(1.1);
+}
 ul{
   display: flex;
   gap: 30px;
 }
 li{
   list-style: none;
+  padding: 2px;
+  cursor: pointer;
+}
+li:hover,.hovered:hover{
+  border: 1px dashed black ;
+  color: white;
+  transition: 1s all;
+ 
 }
 
 /* second container */
+.text{
+  width: 400px;
+  display: flex;
+  z-index: 2;
+  position: relative;
 
+  top: 2.5rem;
+  flex-direction: column;
+  gap: 10px;
+}
+.text h2, .socials{
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.text p span{
+color: rgb(48, 48, 186);
+}
+
+.second-container section{
+  display: flex;
+  justify-content: center;
+}
 .second-container{
- 
+  overflow-y: hidden;
  background-color: var(--big-box-bg);
- width: calc(100vw - 10vw);
+ width: calc(100% - 9%);
+ margin-left: 9%;
  height: 100vh;
  position: relative;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ 
+
+}
+.bg-center{
+  position: relative;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  left: 50px;
+  top: 1rem;
+  z-index: 1;
+  background-color: var(--small-box-bg);
+}
+
+.learn-more{
+  border-bottom: 2px solid black ;
+  width: fit-content;
+  cursor: pointer;
+  transform: scale(1);
+ 
+}
+.learn-more:hover{
+border-bottom: 1px solid rgb(91, 134, 214);
+transform: scale(1.1);
 }
 
 #illustration{
- display: none;
+width: 300px;
+position: relative;
+top: 2.5rem;
+
 }
+.quick-links-wrap{
+  width:calc(100% - 30%);
+  height: 100px;
+  background-color: white;
+  display: flex;
+  position: relative;
+  margin-left: 30%;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+
+}
+.quick-links-wrap > div{
+  border-bottom: 1px solid black;
+}
+.quick-links-wrap > div:hover{
+  transform: scale(1.09);
+  cursor: pointer;
+}
+
+/* projects */
+.projects{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+}
+.projects > div{
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+}
+.project-1{
+  background: url(./manage-landing-page.png);
+  background-position: center;
+  background-size: cover;
+  width:100%;
+ 
+  
+}
+
+.project-2{
+  background: url(.//twitter-nemorphic-Login-page.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  
+}
+.description{
+  width: 400px;
+  height: 400px;
+}
+
+
+.section-2 h1{
+  text-align: center;
+ 
+ 
+}
+
+
+
+
