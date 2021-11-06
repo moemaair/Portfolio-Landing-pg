@@ -12,6 +12,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+ <!-- css animation lib AOS -->
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <link rel="stylesheet" href="style.css">
   <title>Portfolio-Landing-Page</title>
 </head>
@@ -51,14 +55,14 @@
         
          <section>
            <!-- myimage -->
-         <div class="illustration">
+         <div class="illustration" data-aos="fade-right">
           <img src="asset/undraw_on_the_office_fbfs.svg" alt="" id="illustration">
         </div>
 
         <div class="bg-center"></div>
        
         <!-- about me -->
-        <div class="text">
+        <div class="text "data-aos="fade-left">
           <h2>Welcome! i'm Mohamed a <span>Computer Science Student/<span>Web Developer</span></span><br></h3>
           <p>i am creative <span>Programmer</span>, Currently learning Web Developement at <span>moringaSchool</span></p>
            <p class="learn-more">learn More</p>
@@ -87,11 +91,11 @@
        <section class="grid-projects">
          <!-- project one -->
          
-        <div class="project-1 project"></div>
+        <div class="project-1 project" data-aos="fade-up"></div>
 
         <!-- project 1 description -->
-        <div class="project-one-description description">
-          <section>
+        <div class="project-one-description description"data-aos="fade-up">
+          <section >
             <h4>Manage landing page</h4>
            <p>i created This Landing page as a challenge from<a href="https://www.frontendmentor.io/">frontendmentor</a></p>
           </section>
@@ -105,11 +109,11 @@
 
 
           <!-- project two -->
-        <div class="project-2 project"></div>
+        <div class="project-2 project" data-aos="fade-up"></div>
 
         <!-- project 1 description -->
 
-        <div class="project-two-description description">
+        <div class="project-two-description description"data-aos="fade-up">
           <section>
             <h4>Twitter Neumorphic Login Page</h4>
            <p>implemented the illusion of Neumorphic on a login Page to make it more Realistic and better UI</p>
@@ -131,14 +135,14 @@
      <!-- section 3 -->
    <div class="section-3">
      <!-- more about me section -->
-     <div class="more-about-me">
+     <div class="more-about-me"data-aos="fade-right">
        <h2>More about me</h2>
        <p>I'm <span >Mohamed Ibrahim</span>, a Computer Science student and a student at Moringa school, a Bootcamp in Nairobi, kenya.
         I got inspired from playing video games to learn to code, It not an easy journey, but it is worth the struggle. Learning to code was the best decision of my life. Now, I feel confident enough with the Little skills i achieved, I can convert almost every type of design to code and make a multipage website. I have also spent time learning and practicing JavaScript (including working with APIs), functional & Object-oriented programming.
         This is a modern & fast-growing industry. Therefore, I made sure to learn and use frameworks and tools such as Bootstrap, SASS, and git&GitHub, to efficiently build websites using the latest tools.</p>
      </div>
      <!-- tools i know -->
-     <div class="tools">
+     <div class="tools"data-aos="fade-left">
        <h2>Tools</h2>
        <div class="tools-icons">
          <img src="asset/html-1.svg" alt="">
@@ -197,6 +201,9 @@
   </div>
 
   </footer>
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
