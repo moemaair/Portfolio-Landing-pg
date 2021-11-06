@@ -168,8 +168,9 @@ color: rgb(48, 48, 186);
  display: flex;
  flex-direction: column;
  justify-content: space-between;
-
+ filter: drop-shadow(-3px ,-3px 0px black);
 }
+
 .bg-center{
   position: relative;
   border-radius: 100%;
