@@ -13,8 +13,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
- <!-- css animation lib AOS -->
- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <link rel="stylesheet" href="style.css">
   <title>Portfolio-Landing-Page</title>
@@ -55,14 +53,17 @@
         
          <section>
            <!-- myimage -->
-         <div class="illustration" data-aos="fade-right">
+         <div class="illustration" >
+           <!-- desktop view -->
           <img src="asset/undraw_on_the_office_fbfs.svg" alt="" id="illustration">
+          <!-- mobile view -->
+          <img src="./Asset/illustration.svg" alt="" class="mobile-illustration">
         </div>
 
         <div class="bg-center"></div>
        
         <!-- about me -->
-        <div class="text "data-aos="fade-left">
+        <div class="text ">
           <h2>Welcome! i'm Mohamed a <span>Computer Science Student/<span>Web Developer</span></span><br></h3>
           <p>i am creative <span>Programmer</span>, Currently learning Web Developement at <span>moringaSchool</span></p>
            <p class="learn-more">learn More</p>
@@ -91,10 +92,10 @@
        <section class="grid-projects">
          <!-- project one -->
          
-        <div class="project-1 project" data-aos="fade-up"></div>
+        <div class="project-1 project" ></div>
 
         <!-- project 1 description -->
-        <div class="project-one-description description"data-aos="fade-up">
+        <div class="project-one-description description">
           <section >
             <h4>Manage landing page</h4>
            <p>i created This Landing page as a challenge from<a href="https://www.frontendmentor.io/">frontendmentor</a></p>
@@ -109,11 +110,11 @@
 
 
           <!-- project two -->
-        <div class="project-2 project" data-aos="fade-up"></div>
+        <div class="project-2 project" ></div>
 
         <!-- project 1 description -->
 
-        <div class="project-two-description description"data-aos="fade-up">
+        <div class="project-two-description description">
           <section>
             <h4>Twitter Neumorphic Login Page</h4>
            <p>implemented the illusion of Neumorphic on a login Page to make it more Realistic and better UI</p>
@@ -124,7 +125,7 @@
             <button class="source code btn"><a href="https://github.com/moemaair/Portfolio-Landing-pg" target="_blank">source code</a></button>
              <!-- end of project 1 description -->
           </div>
-        </div>
+        </div>  
        </section>
        
      </div>
@@ -135,14 +136,14 @@
      <!-- section 3 -->
    <div class="section-3">
      <!-- more about me section -->
-     <div class="more-about-me"data-aos="fade-right">
+     <div class="more-about-me">
        <h2>More about me</h2>
        <p>I'm <span >Mohamed Ibrahim</span>, a Computer Science student and a student at Moringa school, a Bootcamp in Nairobi, kenya.
         I got inspired from playing video games to learn to code, It not an easy journey, but it is worth the struggle. Learning to code was the best decision of my life. Now, I feel confident enough with the Little skills i achieved, I can convert almost every type of design to code and make a multipage website. I have also spent time learning and practicing JavaScript (including working with APIs), functional & Object-oriented programming.
         This is a modern & fast-growing industry. Therefore, I made sure to learn and use frameworks and tools such as Bootstrap, SASS, and git&GitHub, to efficiently build websites using the latest tools.</p>
      </div>
      <!-- tools i know -->
-     <div class="tools"data-aos="fade-left">
+     <div class="tools">
        <h2>Tools</h2>
        <div class="tools-icons">
          <img src="asset/html-1.svg" alt="">
@@ -184,6 +185,7 @@
       <section class="one">
         <p>Made with 💛 by Mohamed Ibrahim</p>
          <p>&copy2021 privacy</p>
+         
       </section>
      
     <section class="two">
@@ -194,16 +196,29 @@
         <button>Contact</button>
       </div>
     </section>
-
+<!-- mobile substitute for Form valaidation -->
     <img src="asset/footer-illustration.svg" alt="">
+
+    <form id="form">
+      
+        <label for="Name">Full name</label>
+        <input type="text" placeholder="joe Doe">
+      
+
+     
+        <label for="Email">Email: </label>
+        <input type="text" placeholder="joeDoe@gmail.com">
+
+        <textarea name="" id="message-box" cols="10" rows="5" placeholder="send me a message! 😉 "></textarea>
+     
+
+      <input type="submit" id="submit">
+     
+    </form>
 
 
   </div>
 
   </footer>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 </html>
