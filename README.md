@@ -18,6 +18,7 @@
 
 ## screenshots
 - ![Desktop View](Asset/desktop-view.png)
+- ![Mobile View](Asset/mobile-view.png)
 
 ### License
 
