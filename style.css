@@ -164,11 +164,13 @@ top: 2.5rem;
   align-items: center;
   gap: 15rem;
 
+
 }
 
 .quick-links-wrap > div:hover{
   transform: scale(1.09);
   cursor: pointer;
+  border-bottom: 1px solid black;
  
 }
 
