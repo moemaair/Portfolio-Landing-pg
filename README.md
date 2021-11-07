@@ -16,6 +16,9 @@
 ## To view the Demo ↘️
 - [Demo](https://moemaair.github.io/Portfolio-Landing-pg/ )
 
+## screenshots
+- ![Desktop View](Asset/desktop-view.png)
+
 ### License
 
 Copyright (c) {2021}
