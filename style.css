@@ -198,7 +198,7 @@ top: 2.5rem;
   box-shadow: 0.5px 0.5px 2px 0px  black;
 }
 .project-1{
-  background:url(asset/manage-landing-page.png);
+  background:url(Asset/manage-landing-page.png);
 }
 .project-1, .project-2{
   background-size: cover;
@@ -208,7 +208,7 @@ top: 2.5rem;
 }
 
 .project-2{
-  background: url(asset/twitter-nemorphic-Login-page.png);
+  background: url(Asset/twitter-nemorphic-Login-page.png);
   order: 2;
   background-size: cover;
   background-position: center;
@@ -393,7 +393,7 @@ input,textarea:focus{
 }
 
 
- /**************SMALL SCREEN VIEW*********************** */
+ /* *******************************SMALL SCREEN VIEW********************************* */
 @media screen and (max-width:768px) {
   .nav{
     padding:30px;
