@@ -12,72 +12,58 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
+ 
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
   <link rel="stylesheet" href="style.css">
-  <title>Portfolio-Landing-Page</title>
+  <title>Personal Website</title>
 </head>
 <body>
 
   <!-- container -->
 
-  <div class="container">
+  <div class="container-fluid">
     <!-- nav section -->
-    <section class="nav">
-      <!-- logo -->
-      <div class="logo">
-        <h3><span class="notColored">Mohamed Ibrahim</span><span class="colored">Web Developer</span></h3>
-      </div>
-       <!-- socials -->
-       <div class="socials">
-         <a href="https://github.com/moemaair" target="_blank" >Github</a>
-         <a href="https://twitter.com/codingin254" target="_blank">tw</a>
-         <a href="https://www.linkedin.com/in/mohamed-ibrahim-162b26180" target="_blank">In</a>
+    <section class="nav12" style="padding:1rem 5rem ;">
+    
+       <div class="nav_links" style="display: flex; ">
+        <a href="/" target="_blank" style="flex-grow: 1; padding: 20px; color: #ffff!important;" >Home</a>
+        <div class="right_links">
+         <a href="#about-me" target="_blank" >About Me</a>
+         <a href="/" target="_blank" >Projects</a>
+         <a href="/" target="_blank" >Contacts</a>
+         <a href="https://drive.google.com/file/d/1_k8DyUQ40ZwZ0zIFTAn_hHMQynv8IDQE/view?usp=sharing" target="_blank">
+           <button class="resume-button">Resume</button>
+         </a>
+   
+        </div>
+         <!-- <a href="https://twitter.com/codingin254" target="_blank">tw</a>
+         <a href="https://www.linkedin.com/in/mohamed-ibrahim-162b26180" target="_blank">In</a> -->
        </div>
+       
 
 
         <!-- nav list -->
-        <div class="nav-list menu">
+        <!-- <div class="nav-list menu">
           <ul>
            <li><a href=""class="hovered">About</a></li>
            <li><a href=""class="hovered">latest work</a></li>
            <li><a href=""class="hovered">contact</a></li>
           </ul>
-        </div>
+        </div> -->
         
       </section>
       <!-- end of nav section -->
 
       <!-- second-container -->
-      <div class="second-container">
-        
-         <section>
-           <!-- myimage -->
-         <div class="illustration" >
-           <!-- desktop view -->
-          <img src="Asset/undraw_on_the_office_fbfs.svg" alt="" id="illustration">
-          <!-- mobile view -->
-          <img src="Asset/illustration.svg" alt="" class="mobile-illustration">
-        </div>
-
-        <div class="bg-center"></div>
-       
-        <!-- about me -->
-        <div class="text ">
-          <h2>Welcome! i'm Mohamed a <span>Computer Science Student/<span>Web Developer</span></span><br></h3>
-          <p>i am creative <span>Programmer</span>, Currently learning Web Developement at <span>moringaSchool</span></p>
-           <p class="learn-more">learn More</p>
-        </div>
-
-         </section>
-
-         <div class="quick-links-wrap">
-           <div class="personal-projects">Personal Projects</div>
-           <div class="personal-projects">Socials</div>
-           <div class="personal-projects">Tools</div>
-         </div>
-
-
+      <!-- background: rgb(0,0,0); -->
+<!-- background: linear-gradient(4deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.46122198879551823) 100%); -->
+      <div class="second-container" style="color: #ffff">
+        <img src="/Asset/IMG_20220510_150542_666-removebg-preview.jpg" alt="" class="myimage">
+        <h1 class="mx-auto my-0 text-uppercase" style="text-align: center;">MOHAMED<br> IBRAHIM</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5" >software engineer | lifelong learner | cat enthusiast </h2>
+        <a id="moreButton" href="#about-me" class="btn btn-primary js-scroll-trigger">More About Me</a>
       </div>
     
      
@@ -87,15 +73,21 @@
 
   <!-- section two -->
    <div class="section-2 ">
-     <div class="projects">
-      <h2>Latest Projects</h2>
-       <section class="grid-projects">
+     <div class="projects" id = "about-me">
+
+      <h2 class="text-white mb-4 intro">Hey there! I'm Mohamed, a software Developer </a>and recent </fontsninja-text><a href="https://moringaschool.com/"><fontsninja-text id="fontsninja-text-37" class="fontsninja-family-rule_nunito_600_normal">Moringa School</fontsninja-text></a><fontsninja-text id="fontsninja-text-35" class="fontsninja-family-rule_nunito_600_normal"> grad. </fontsninja-text></h2>
+      <p style="margin: 5rem 15rem ; line-height: 2rem; color: #909090">I'm a junior SWE in building Android apps and interested in building web apps, coding videogames, and teaching / tutoring (both coding and non-coding things!).
+        Also, I am an undergraduate Student Majoring in Information Technology at JKUAT. <br>Please see my <a href="https://drive.google.com/file/d/1_k8DyUQ40ZwZ0zIFTAn_hHMQynv8IDQE/view?usp=sharing" target="_blank" style="color: #44A1F7; ">resume</a> (or continue scrolling down here)
+       Above all, I am passionate about altruistic causes using technology. For example, at JKUAT, I served on the exec team of Code for Good Consulting, a club that works with teams of within tech students in Nairobi to code and deliver software-driven solutions to local companies. Finally, I got inspired from playing video games to learn to code, It not an easy journey, but it is worth the struggle. Learning to code was the best decision of my life. Now, I feel confident enough with the Little skills i achieved, I can convert almost every type of design to code and make a multipage website. I have also spent time learning and practicing Android (using Kotlin and Jetpack Compose, including working with APIs), functional & Object-oriented programming.
+       This is a modern & fast-growing industry. Therefore, I made sure to learn and use frameworks and tools such as Bootstrap, SASS, and git & GitHub, Angular, JavaSpark , NodeJs , ExpressJs to efficiently build websites and android apps using the latest tools. My Main database is Postgres(sql).         
+       In my free time, I enjoy working out, Reading Fiction books , traveling, puzzle hunting, playing board games, and watching cat videos :)</p>
+       <!-- <section class="grid-projects">
          <!-- project one -->
-         
-        <div class="project-1 project" ></div>
+
+        <!-- <div class="project-1 project" ></div>
 
         <!-- project 1 description -->
-        <div class="project-one-description description">
+        <!-- <div class="project-one-description description">
           <section >
             <h4>Manage landing page</h4>
            <p>i created This Landing page as a challenge from<a href="https://www.frontendmentor.io/">frontendmentor</a></p>
@@ -106,15 +98,15 @@
             <button class="source code btn"><a href="https://github.com/moemaair/Portfolio-Landing-pg" target="_blank">source code</a></button>
           </div>
           <!-- end of project 1 description -->
-        </div>
+        <!-- </div> -->
 
 
           <!-- project two -->
-        <div class="project-2 project" ></div>
+        <!-- <div class="project-2 project" ></div> -->
 
         <!-- project 1 description -->
 
-        <div class="project-two-description description">
+        <!-- <div class="project-two-description description">
           <section>
             <h4>Twitter Neumorphic Login Page</h4>
            <p>implemented the illusion of Neumorphic on a login Page to make it more Realistic and better UI</p>
@@ -124,26 +116,166 @@
             <button class=" demo btn"><a href=" https://moemaair.github.io/Portfolio-Landing-pg/" target="_blank">Demo</a></button>
             <button class="source code btn"><a href="https://github.com/moemaair/Portfolio-Landing-pg" target="_blank">source code</a></button>
              <!-- end of project 1 description -->
-          </div>
-        </div>  
-       </section>
+     
+        
+      
        
-     </div>
+   </div>
+  </div>
+
+
+  <div class="experience project_github" style="min-height: 100vh; background-color:#161616;  margin: 4rem 8rem ; padding:5rem 4rem ; ">
+   <div class="flex-column " >
+    
+     <h2>Selected Work Experience</h2>
+     <p>Please see my <a href="https://www.linkedin.com/in/mohamed-ibrahim-162b26180/" style="  color: #44A1F7;         ">Linkedin</a> for the complete list of my past work experiences.</p> 
    </div>
 
+   <table class="flex-column-lg m-5 gap-5">
+    <tr class="gap-3 flex-row ">
+     <td>
+      <img src="/Asset/zuri.jpeg" alt="" class="company_logo">
+     </td>
+     <td class="work-desc" style="padding-left: 70px; padding-top:70px;">
+       <h2>Zuri Team</h2>
+        <h5> Frontend Developer</h5>
+       <h6>Fall 2020 - present</h6>
+       <ul>
+        <li><p>Software Engineer on the Google Health (Consumer, Screeners & Actions) team</p></li>
+       </ul>
+       
+      </td>
+     </tr>
+
+     
+     <tr class="gap-3 ">
+      <td>
+       <img src="/Asset/kpa.png" alt="" class="company_logo" style="margin-top:3rem;">
+      </td>
+      <td class="work-desc" style="padding-left: 70px; padding-top:70px;">
+       <h2>Kenya Port Authority</h2>
+        <h5> IT intern </h5>
+       <h6>Fall 2020 - present</h6>
+       <ul>
+        <li><p>Software Engineer on the Google Health (Consumer, Screeners & Actions) team</p></li>
+       </ul>
+       
+      </td>
+    </tr>
 
 
-     <!-- section 3 -->
-   <div class="section-3">
-     <!-- more about me section -->
-     <div class="more-about-me">
-       <h2>More about me</h2>
-       <p>I'm <span >Mohamed Ibrahim</span>, a Computer Science student and a student at Moringa school, a Bootcamp in Nairobi, kenya.
-        I got inspired from playing video games to learn to code, It not an easy journey, but it is worth the struggle. Learning to code was the best decision of my life. Now, I feel confident enough with the Little skills i achieved, I can convert almost every type of design to code and make a multipage website. I have also spent time learning and practicing JavaScript (including working with APIs), functional & Object-oriented programming.
-        This is a modern & fast-growing industry. Therefore, I made sure to learn and use frameworks and tools such as Bootstrap, SASS, and git&GitHub, to efficiently build websites using the latest tools.</p>
+   </table>
+
+ </div>
+<hr>
+<div class="flex-column" style="padding:0rem 9rem;"  >
+ <h2>Projects</h2>
+ <p> Below are some of the projects I've worked on for fun :) <a href="https://www.github.com/moemaair" style="  color: #44A1F7;">GitHub</a> for the complete list of my project.</p>
+</div>
+ <div class="experience" style="background-color:#161616;  margin: 4rem 8rem ; padding:5rem 4rem ; ">
+  
+
+  <section class="flex-column" >
+   <div class="card " style="min-width: 100%;">
+    <div class="row g-0">
+      <div class="col-md-6">
+        <div class="card-body p-5" style="text-align: right;">
+         <h5 class="card-title" style="font-size: 39px;">Cryptonet</h5>
+         <p class="card-text">Crypto net is an informational application and is used to convert global cryptocurrency into kenyan currency.</p>
+         <section class="d-flex gap-3" style="text-align: right;" >
+          <p class="card-text">
+           <small style="font-size: 14px"class="text-danger"><a href="https://github.com/moemaair/Crypto-net" style="text-align: center;" >Source Code</a></small></p>
+          <p class="card-text"><small style="font-size: 14px"class="text-danger " >Ongoing Project</small></p>
+         </section>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex cryptonet gap-3">
+       <img src="/Asset/cryptonet_splashScreen.png" class="img-fluid rounded-start" alt="..." >
+       <img src="/Asset/cryptonet_dashboard.png" class="img-fluid rounded-start" alt="..." >
      </div>
+    </div>
+  </div>
+
+  <div class="card" style="min-width: 100%">
+   <div class="row g-0">
+     <div class="col-md-6">
+       <img src="/Asset/itrack_wildlife_homepage.png" class="img-fluid rounded-start" alt="...">
+     </div>
+     <div class="col-md-6">
+       <div class="card-body p-5">
+         <h5 class="card-title">iTrack-wildlife</h5>
+         <p class="card-text">Web Application to Record animals and Endangered animals Sightings by a forest Ranger.</p>
+         <small style="font-size: 14px"class=""><a href="https://ibrahim-track-wildlife.herokuapp.com/" style="text-align: center;" >Access it</a></small></p>
+         <small style="font-size: 14px"class="source code"><a href="https://github.com/moemaair/Track-wildlife-" style="text-align: center;" >Source Code</a></small></p>
+        </div>
+     </div>
+   </div>
+ </div>
+
+ <div class="card " style="min-width: 100%;">
+  <div class="row g-0">
+   <div class="col-md-6">
+    <div class="card-body p-5" style="text-align: right;">
+     <h5 class="card-title" style="font-size: 39px;">SuperHeroApp</h5>
+     <p class="card-text">Create an Adventure by inserting your favorite Squad and a Hero in SuperHeroApp. decide which Hero fits what Squad its all upto you.🦸‍♂️🦸‍♀️</p>
+     <section class="d-flex gap-3" style="text-align: right;" >
+      <p class="card-text">
+       <small style="font-size: 14px"class="source-code"><a href="https://github.com/moemaair/SuperHeroApp" style="text-align: center;" >Source Code</a></small></p>
+      <p class="card-text"><small style="font-size: 14px"class="text-success"><a href="https://ibrahim-hero-squad-app.herokuapp.com/">Access it</a></small></p>
+     </section>
+    </div>
+  </div>
+    <div class="col-md-6">
+      <img src="/Asset/superhero_bg.png" class="img-fluid  rounded-start" alt="..." >
+    </div>
+  </div>
+ </div>
+
+ <div class="card" style="min-width: 100%">
+  <div class="row g-0">
+    <div class="col-md-6">
+      <img src="/Asset/Speech_Text_Reader.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-6">
+      <div class="card-body p-5">
+        <h5 class="card-title">SpeechTextReader</h5>
+        <p class="card-text">Voice recognition on Text website -Speech Reader.</p>
+        <small style="font-size: 14px"class=""><a href="moemaair.github.io/speech-reader/" style="text-align: center;" >Access it</a></small></p>
+        <small style="font-size: 14px"class="source code"><a href="https://github.com/moemaair/speech-reader" style="text-align: center;" >Source Code</a></small></p>
+       </div>
+    </div>
+  </div>
+</div>
+
+<div class="card " style="min-width: 100%;">
+ <div class="row g-0">
+  <div class="col-md-6">
+   <div class="card-body p-5" style="text-align: right;">
+    <h5 class="card-title" style="font-size: 39px;">Rentomatic</h5>
+    <p class="card-text">Rentomatic is a home rental/ housing website.</p>
+    <section class="d-flex gap-3" style="text-align: right;" >
+     <p class="card-text">
+      <small style="font-size: 14px"class="source-code"><a href="https://github.com/moemaair/SuperHeroApp" style="text-align: center;" >Source Code</a></small></p>
+     <p class="card-text"><small style="font-size: 14px"class="text-success"><a href="https://ibrahim-hero-squad-app.herokuapp.com/">Access it</a></small></p>
+    </section>
+   </div>
+ </div>
+   <div class="col-md-6">
+     <img src="/Asset/rentomatic.png" class="img-fluid  rounded-start" alt="..." >
+   </div>
+ </div>
+</div>
+
+
+  </section>
+
+ 
+
+</div>
+
+
      <!-- tools i know -->
-     <div class="tools">
+     <!-- <div class="tools">
        <h2>Tools</h2>
        <div class="tools-icons">
          <img src="Asset/html-1.svg" alt="">
@@ -152,8 +284,8 @@
          <img src="Asset/sass-1.svg" alt="">
          <img src="Asset/git.svg" alt="">
          
-       </div>
-     </div>
+       </div> -->
+  
      
    </div>
    
